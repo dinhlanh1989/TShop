@@ -1,0 +1,96 @@
+<div class="slider-content">
+    <ul id="pager2" class="container">
+        <span ng-repeat="slideitem in images" class="{{getActiveClassForThumbItem($index)}}" ng-click="goToSlide($index)">•</span>
+    </ul>
+    <!-- prev/next links -->
+
+    <span class="prevControl sliderControl" ng-click="prev()"> <i class="fa fa-angle-left fa-3x "></i></span>
+    <span class="nextControl sliderControl" ng-click="next()"> <i class="fa fa-angle-right fa-3x "></i></span>
+    <div class="slider slider-v1" data-cycle-swipe="true" data-cycle-prev=".prevControl" data-cycle-next=".nextControl" data-cycle-loader="wait">
+        <div class="{{getActiveClassForSliderItem($index)}} slider-item slider-item-img3" ng-repeat="slideitem in images">
+            <div class="sliderInfo">
+                <div class="container">
+                    <div class="col-lg-5 col-md-4 col-sm-6 col-xs-8   pull-left sliderText white hidden-xs">
+                        <div class="inner">
+                            <h1>{{slideitem.title}}</h1>
+                            <h3 class="price "> {{slideitem.price}}</h3>
+                            <p class="hidden-xs">{{slideitem.content}}</p>
+                            <a href="GreenLightProduct.htm" class="btn btn-primary">SHOP NOW <span class="arrowUnicode">►</span></a> </div>
+                    </div>
+                </div>
+            </div>
+            <img ng-src="{{slideitem.src}}" class="img-responsive parallaximg sliderImg" alt="img"> </div>
+        <!--
+        <div class="slider-item slider-item-img3 " ng-repeat="slide in slideitems">
+            <div class="sliderInfo">
+                <div class="container">
+                    <div class="col-lg-5 col-md-4 col-sm-6 col-xs-8   pull-left sliderText white hidden-xs">
+                        <div class="inner">
+                            <h1>TSHOP JEANS</h1>
+                            <h3 class="price "> Free Shipping on $100</h3>
+                            <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                            <a href="GreenLightProduct.htm" class="btn btn-primary">SHOP NOW <span class="arrowUnicode">►</span></a> </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/slider4.jpg" class="img-responsive parallaximg sliderImg" alt="img"> </div>
+        <!--
+        <div class="slider-item slider-item-img3 ">
+            <div class="sliderInfo">
+                <div class="container">
+                    <div class="col-lg-5 col-md-4 col-sm-6 col-xs-8   pull-left sliderText white hidden-xs">
+                        <div class="inner">
+                            <h1>TSHOP JEANS</h1>
+                            <h3 class="price "> Free Shipping on $100</h3>
+                            <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                            <a href="GreenLightProduct.htm" class="btn btn-primary">SHOP NOW <span class="arrowUnicode">►</span></a> </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/slider4.jpg" class="img-responsive parallaximg sliderImg" alt="img"> </div>
+
+        <div class="slider-item slider-item-img3 ">
+            <div class="sliderInfo">
+                <div class="container">
+                    <div class="col-lg-5 col-md-4 col-sm-6 col-xs-8   pull-left sliderText white hidden-xs">
+                        <div class="inner">
+                            <h1>TSHOP JEANS</h1>
+                            <h3 class="price "> Free Shipping on $100</h3>
+                            <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                            <a href="GreenLightProduct.htm" class="btn btn-primary">SHOP NOW <span class="arrowUnicode">►</span></a> </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/slider4.jpg" class="img-responsive parallaximg sliderImg" alt="img"> </div>
+
+        <div class="slider-item slider-item-img3 ">
+            <div class="sliderInfo">
+                <div class="container">
+                    <div class="col-lg-5 col-md-4 col-sm-6 col-xs-8   pull-left sliderText white hidden-xs">
+                        <div class="inner">
+                            <h1>TSHOP JEANS</h1>
+                            <h3 class="price "> Free Shipping on $100</h3>
+                            <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                            <a href="GreenLightProduct.htm" class="btn btn-primary">SHOP NOW <span class="arrowUnicode">►</span></a> </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/slider4.jpg" class="img-responsive parallaximg sliderImg" alt="img"> </div>
+
+        <div class="slider-item slider-item-img3 ">
+            <div class="sliderInfo">
+                <div class="container">
+                    <div class="col-lg-5 col-md-4 col-sm-6 col-xs-8   pull-left sliderText white hidden-xs">
+                        <div class="inner">
+                            <h1>TSHOP JEANS</h1>
+                            <h3 class="price "> Free Shipping on $100</h3>
+                            <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                            <a href="GreenLightProduct.htm" class="btn btn-primary">SHOP NOW <span class="arrowUnicode">►</span></a> </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/slider4.jpg" class="img-responsive parallaximg sliderImg" alt="img"> </div>
+        -->
+    </div>
+    <!--/.slider slider-v1-->
+</div>
